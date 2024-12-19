@@ -1,0 +1,63 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+  }
+  #commentList li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Carrusel */
+  #ninjaCarousel .carousel-item img {
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    height: 600px; /* Define una altura fija para el carrusel */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro en los controles */
+    border-radius: 50%;
+  }
+  /* Color de cuadrados */
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    #ninjaCarousel .carousel-item img {
+      height: 300px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+    .carousel-caption {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #ninjaCarousel .carousel-item img {
+      height: 200px; /* Reduce aún más la altura en pantallas pequeñas */
+    }
+    .carousel-caption {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  

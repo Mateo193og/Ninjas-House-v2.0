@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículos Ninja</title>
+  <link rel="icon" href="🉐" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">⚔️ Artículos Ninja</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Productos.HTML">Listado de Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.HTML">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Carrito.HTML">Carrito</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="bg-dark text-white text-center py-3">
+    <h1>⚔️ Artículos Ninja ⚔️</h1>
+    <p>Todo lo que un ninja necesita, en un solo lugar.</p>
+  </header>
+
+  <!-- Carrusel -->
+  <div id="ninjaCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Imagen 1 -->
+      <div class="carousel-item active">
+        <img src="Imagenes/pexels-cottonbro-7778825.jpg" class="d-block w-100" alt="Katana">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Katana</h5>
+          <p>La herramienta definitiva para el ninja moderno.</p>
+          <div class="container">
+            <a href="Productos.HTML">
+            <button style="background-color: rgba(41, 12, 145, 0.445);color: aliceblue;">Productos</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 2 -->
+      <div class="carousel-item">
+        <img src="Imagenes/arts-martial-metal-ninja-wallpaper-preview.jpg" class="d-block w-100" alt="Shuriken">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Shuriken</h5>
+          <p>Rápidos, letales y compactos.</p>
+          <div class="container">
+            <a href="Productos.HTML">
+            <button style="background-color: rgba(41, 12, 145, 0.445);color: aliceblue;">Productos</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 3 -->
+      <div class="carousel-item">
+        <img src="Imagenes/KUNAI_Render_square_jpg-full.jpg" class="d-block w-100" alt="Kunai">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kunai</h5>
+          <p>Una clásica herramienta multiusos del ninja.</p>
+          <div class="container">
+            <a href="Productos.HTML">
+            <button style="background-color: rgba(41, 12, 145, 0.445);color: aliceblue;">Productos</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 4 -->
+      <div class="carousel-item">
+        <img src="Imagenes/6f5a45cd6b22009d2120c291c8ec45b2.jpeg" class="d-block w-100" alt="Bandana Ninja">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bandana Ninja</h5>
+          <p>El símbolo de lealtad y honor ninja.</p>
+          <div class="container">
+            <a href="Productos.HTML">
+            <button style="background-color: rgba(41, 12, 145, 0.445);color: aliceblue;">Productos</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#ninjaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ninjaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  <!-- Sección de Comentarios -->
+<section class="container my-5">
+  <h3 class="text-center mb-4" style="color: white;">Sección de Comentarios</h3>
+  <div class="row">
+    <!-- Formulario para añadir comentarios -->
+    <div class="col-md-6 offset-md-3">
+      <form id="commentForm">
+        <div class="mb-3">
+          <label for="userName" class="form-label" style="color: white;">Nombre</label>
+          <input type="text" class="form-control" id="userName" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="userComment" class="form-label" style="color: white;">Comentario</label>
+          <textarea class="form-control" id="userComment" rows="3" placeholder="Escribe tu comentario" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar Comentario</button>
+      </form>
+    </div>
+  </div>
+  <!-- Lista de Comentarios -->
+  <div class="row mt-5">
+    <div class="col-md-8 offset-md-2">
+      <h4 style="color: white;">Comentarios Recientes:</h4>
+      <ul id="commentList" class="list-group">
+        <!-- Los comentarios se agregarán aquí dinámicamente -->
+      </ul>
+    </div>
+  </div>
+</section>
+  <!-- Pie de página -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Sección izquierda -->
+        <div class="col-md-4">
+          <h5>Ninja's House</h5>
+        </div>
+        
+        <!-- Sección central-->
+        <div class="col-md-4 text-center">
+          <h5>Contáctanos</h5>
+          <a href="https://www.facebook.com/groups/432485360194258/" target="_blank" class="text-white me-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/espadasymas" target="_blank" class="text-white me-3">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="text-white">
+            <i class="fab fa-tiktok fa-2x"></i>
+          </a>
+        </div>
+  
+        <!-- Sección derecha -->
+        <div class="col-md-4 text-end" style="opacity: 0.09;">
+          <h5>Erick Mateo Ross Montenegro</h5>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
